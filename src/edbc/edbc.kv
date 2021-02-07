@@ -1,0 +1,105 @@
+#:kivy 2.0
+
+<Edbc>:
+	main_screen: main_screen
+	cols: 3
+    Label:
+    	size_hint: 3.0/7, 3.0/7
+        text: '[]'
+    BoxLayout:
+        orientation: 'horizontal'
+        padding: 10
+        spacing: 10
+    	size_hint: 15.0/7, 3.0/7
+        Button:
+            text: '[1]'
+            on_press: root.click1()
+        Button:
+            text: '[2]'
+            on_press: root.click2()
+        Button:
+            text: '[3]'
+            on_press: root.click3()
+        Button:
+            text: '[4]'
+            on_press: root.click4()
+        Button:
+            text: '[5]'
+            on_press: root.click5()
+    Label:
+    	size_hint: 3.0/7, 3.0/7
+        text: '[]'
+    BoxLayout:
+        orientation: 'vertical'
+        size_hint: 3.0/7, 15.0/7
+        padding: 10
+        spacing: 10
+        Button:
+            text: '[20]'
+            on_press: root.click20()
+        Button:
+            text: '[19]'
+            on_press: root.click19()
+        Button:
+            text: '[18]'
+            on_press: root.click18()
+        Button:
+            text: '[17]'
+            on_press: root.click17()
+        Button:
+            text: '[16]'
+            on_press: root.click16()
+    Label:
+    	id: main_screen
+    	size_hint: 15.0/7, 15.0/7
+    	font_name: 'RobotoMono-Regular'
+    	font_size: 16
+    	#color: '#00ff00'
+    	color: '#a89322'
+        text: ''
+    BoxLayout:
+        orientation: 'vertical'
+        size_hint: 3.0/7, 15.0/7
+        padding: 10
+        spacing: 10
+        Button:
+            text: '[6]'
+            on_press: root.click6()
+        Button:
+            text: '[7]'
+            on_press: root.click7()
+        Button:
+            text: '[8]'
+            on_press: root.click8()
+        Button:
+            text: '[9]'
+            on_press: root.click9()
+        Button:
+            text: '[10]'
+            on_press: root.click10()
+    Label:
+    	size_hint: 3.0/7, 3.0/7
+        text: '[]'
+    BoxLayout:
+        orientation: 'horizontal'
+    	size_hint: 15.0/7, 3.0/7 
+        padding: 10
+        spacing: 10
+        Button:
+            text: '[15]'
+            on_press: root.click15()
+        Button:
+            text: '[14]'
+            on_press: root.click14()
+        Button:
+            text: '[13]'
+            on_press: root.click13()
+        Button:
+            text: '[12]'
+            on_press: root.click12()
+        Button:
+            text: '[11]'
+            on_press: root.click11()
+    Label:
+    	size_hint: 3.0/7, 3.0/7
+    	text: '[]'
