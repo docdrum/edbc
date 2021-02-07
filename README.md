@@ -16,8 +16,8 @@ Alt-Tabbing out of the game is immersion-breaking to-the-max, and because I fly 
 
 
 ## Development Screenshots
-[Status-Screen](screenshot_status.png)
-[Inventory-Screen](screenshot_inventory.png)
+![Status-Screen](screenshot_status.png)
+![Inventory-Screen](screenshot_inventory.png)
 
 ## Features
  - on FSD-Jump, show a fast overview of the target-system. Quite what EDDI/EDDiscovery does, but without chewing my ear
@@ -70,8 +70,9 @@ I have some experience in working with Python, but there are tons of aspects in 
 ## How do I download/build/test EDBC?
 Yeah, I have no idea. You can fork/clone the project using git/github, but from that point on you're on your own.
 I'm using github as a backup of my development folder, and I run the program straight from that directory, so I have not spent time on
-building/deploying. As a hint: I use virtual-environments, and the additional packages get installed via 'pip install kivy'. I try to
-keep the requirements.txt file updated. My run command is 'python main.py' in the src/edbc folder.
+building/deploying. As a hint: I use virtual-environments (python -m venv env, env/Scripts/activate.ps1), and the additional packages
+get installed via 'pip install kivy'. I try to keep the requirements.txt file updated, so 'pip install -r requirements.txt' should work.
+To run EDBC execute 'python main.py' in the src/edbc folder.
 
 ## I have (found) a similar project, maybe you want to try that?
 Really? I haven't. Agreed, I didn't look very hard, but the projects I found didn't work in VR or didn't serve my goals. I'd love to
