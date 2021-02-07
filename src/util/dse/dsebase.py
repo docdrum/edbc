@@ -1,8 +1,3 @@
-'''
-Created on 5 Feb 2021
-
-@author: cstft
-'''
 from util.dse.dseerror import DSEError
 
 class DSEBase:
@@ -20,7 +15,7 @@ class DSEBase:
         if self.current_button == -1:
             return None
         return self.keys[self.current_button][self.current_count]
-        
+
     def pressButton(self, button_id):
         if button_id > len(self.keys):
             raise DSEError("invalid button id")
@@ -36,7 +31,7 @@ class DSEBase:
             self.current_count = 0
             self.current_button = button_id
             self.wait_for_more = True
-            
+
     def timeOut(self):
         self.wait_for_more = False
         self.input = self.input + self.currentChar()

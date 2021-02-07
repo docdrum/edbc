@@ -1,9 +1,3 @@
-'''
-Created on 31 Jan 2021
-
-@author: cstft
-'''
-
 import requests
 
 system_bodies_url = "https://www.edsm.net/api-system-v1/bodies"
@@ -36,5 +30,5 @@ def print_system_overview(system_name):
     print(f'Estimated value/mapped: {value["estimatedValue"]} / {value["estimatedValueMapped"]}')
     for i in value["valuableBodies"]:
         print(f'  {i["bodyName"]}: {i["valueMax"]} ({i["distance"]}ls)')
-        
+
 print_system_overview("Sol")

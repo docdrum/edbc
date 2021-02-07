@@ -1,9 +1,3 @@
-'''
-Created on 5 Feb 2021
-
-@author: cstft
-'''
-
 from util.dse.dsebase import DSEBase
 from util.dse.dseerror import DSEError
 
@@ -20,4 +14,4 @@ class DSE10(DSEBase):
                      "PQRS7",
                      "TUV8",
                      "WXYZ9"]
-    
+

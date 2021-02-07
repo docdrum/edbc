@@ -1,8 +1,3 @@
-'''
-Created on 5 Feb 2021
-
-@author: cstft
-'''
 import unittest
 
 from util.dse.dse10 import DSE10
@@ -31,7 +26,7 @@ class DSE5Test(unittest.TestCase):
         self.assertTrue(d.wait_for_more)
         self.assertEqual(d.currentChar(), 'B')
         self.assertEqual(d.current_button, 2)
-        
+
     def testRollAround(self):
         d = DSE10()
         for i in range(0, 4):
@@ -41,7 +36,7 @@ class DSE5Test(unittest.TestCase):
         d.pressButton(2)
         self.assertEqual(d.currentChar(), 'A')
         self.assertEqual(d.current_count, 0)
-        
+
     def testSecondButton(self):
         d = DSE10()
         d.pressButton(2)
@@ -58,7 +53,7 @@ class DSE5Test(unittest.TestCase):
         d.timeOut()
         self.assertEqual(d.get(), 'B')
         self.assertFalse(d.wait_for_more)
-        
+
     def testEnterWord(self):
         d = DSE10()
         d.pressButton(8)
@@ -71,7 +66,7 @@ class DSE5Test(unittest.TestCase):
         d.pressButton(8)
         d.timeOut()
         self.assertEqual(d.get(), 'TEST')
-        
+
 if __name__ == "__main__":
     #import sys;sys.argv = ['', 'Test.testName']
     unittest.main()
