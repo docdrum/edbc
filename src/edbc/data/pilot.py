@@ -1,8 +1,3 @@
-'''
-Created on 6 Feb 2021
-
-@author: cstft
-'''
 from edbc.data.edbcdataobject import EdbcDataObject
 
 class Pilot(EdbcDataObject):

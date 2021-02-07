@@ -1,8 +1,3 @@
-'''
-Created on 6 Feb 2021
-
-@author: cstft
-'''
 from edbc.data.edbcdataobject import EdbcDataObject
 
 class Cargo(EdbcDataObject):
@@ -15,7 +10,7 @@ class Cargo(EdbcDataObject):
             self.items.append([999, 23]) # Limpets
         else:
             raise NotImplementedError
-            
+
     def getName(eddb_id):  # @NoSelf
         try:
             return {
@@ -45,4 +40,4 @@ class Cargo(EdbcDataObject):
             }[eddb_id].upper()
         except:
             return f"(unknown id: {eddb_id})"
-            
+

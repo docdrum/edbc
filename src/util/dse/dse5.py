@@ -1,8 +1,3 @@
-'''
-Created on 5 Feb 2021
-
-@author: cstft
-'''
 from util.dse.dsebase import DSEBase
 from util.dse.dseerror import DSEError
 
@@ -14,4 +9,4 @@ class DSE5(DSEBase):
                      "NOPQRS",
                      "TUVWXYZ",
                      "0123456789-"]
-    
+
